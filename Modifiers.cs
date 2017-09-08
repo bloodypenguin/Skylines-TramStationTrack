@@ -51,6 +51,16 @@ namespace TramStationTracks
                 lane.m_finalDirection = NetInfo.Direction.AvoidForward;
             }
         }
+
+        public static void SetupSunken(NetInfo prefab)
+        {
+            if (prefab == null)
+            {
+                return;
+            }
+            prefab.m_flattenTerrain = false;
+            prefab.GetComponent<RoadAI>().m_tunnelInfo = prefab;
+        }
     }
 
 }

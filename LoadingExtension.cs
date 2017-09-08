@@ -16,6 +16,7 @@ namespace TramStationTracks
                 Container = new GameObject("TramStationTrack").AddComponent<Initializer>();
             }
             Util.AddLocale("NET", "Tram Station Track", "Tram Station Track", "Tram Station Track");
+            Util.AddLocale("NET", "Tram Station Track Sunken", "Tram Station Track Sunken", "Tram Station Track Sunken");
         }
 
         public override void OnReleased()
